@@ -20,11 +20,12 @@ assert s.solve({"a": {"b": {"c": "d"}}}, 'a/b/c') == 'd'
 assert s.solve({"x": {"y": {"z": "a"}}}, 'x/y/z') == 'a'
 
 # User tests
-print('Example object: {"a": {"b": {"c": "d"}}}')
-obj = json.loads(input('Please enter object:'))
+print('Example Object: {"a": {"b": {"c": "d"}}}')
+obj = json.loads(input('Please enter Object: '))
 print()
-print('Example key: a/b/c')
-key = input('Please enter key:')
+print('Example Key: a/b/c')
+key = input('Please enter Key: ')
+print()
 
 s = Solution()
-print('value: ', s.solve(obj, key))
+print('Value:', s.solve(obj, key))
