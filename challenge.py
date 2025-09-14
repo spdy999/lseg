@@ -15,9 +15,12 @@ class Solution:
 
 
 # Unit tests
+print('Running unit tests...')
 s = Solution()
 assert s.solve({"a": {"b": {"c": "d"}}}, 'a/b/c') == 'd'
 assert s.solve({"x": {"y": {"z": "a"}}}, 'x/y/z') == 'a'
+print('All passed')
+print()
 
 # User tests
 print('Example Object: {"a": {"b": {"c": "d"}}}')
